@@ -9,29 +9,101 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo"></div>
-        <div class="navbar"></div>
+        <img src="images/restaurant-logo.jpg" alt="Main Logo">
+        <div class="navbar">
+            <ul class="options">
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Join Waitlist</li>
+                <li>Catering</li>
+            </ul>
+        </div>
         <button class="contact">Contact</button>
     </div>
     <div class="main">
         <h1>Questionaire</h1>
-        <div class="form">
-            <h3>Summary</h3>
-            <div class="contact-info">
+        <div class="survey-form">
+            <div class="contact-section">
+                <h4>- Contact Information -</h4>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your fullname">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <label for="phone-number">Phone Number: </label>
+                <input type="number" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
             </div>
-            <hr>
-            <div class="rating">
+            <div class="rating-experience">
+                <h4>- Overall Experience -</h4>
+                <div class="rating">
+                    <input type="radio" name="rate" id="star5" value="5">
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" name="rate" id="star4" value="4">
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" name="rate" id="star3" value="3">
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" name="rate" id="star2" value="2">
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" name="rate" id="star1" value="1">
+                    <label for="star1" title="text">1 stars</label>
+                </div>
+                <div class="dish-options">
+                    <label for="menu-items">Choose your favorite dish from our menu: </label>
+                    <select name="menu-items" id="menu-items">
+                        <option value="choose from below" selected>Choose from below</option>
+                        <option value="california-rolls">California Rolls</option>
+                        <option value="dragon-roll">Dragon Roll</option>
+                        <option value="tempura">Tempura</option>
+                        <option value="chirashi">Chirashi</option>
+                        <option value="nigiri">Nigiri</option>
+                        <option value="sashimi">Sashimi</option>
+                        <option value="uramaki">Uramaki</option>
+                        <option value="alaska-roll">Alaska Roll</option>
+                    </select>
+                </div>
+                <div class="comment-section">
+                    <div class="flex">
+                        <label for="server-name">Enter your server's name:</label>
+                        <input type="text" name="server-name" id="server-name">
+                    </div>
+                    <div class="flex">
+                        <label for="server-notes">Comments on how your server took take care of you:</label>
+                        <textarea name="server-notes" id="server-notes" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="flex">
+                        <label for="any-notes">Comments on your overall experience today!</label>
+                        <textarea name="any-notes" id="any-notes" cols="50" rows="10"></textarea>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div class="drop-options">
-            </div>
-        <button class="submit">Submit</button>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="flex">
+            <div class="submit-section">
+                <div class="dropbox">
+                    <label for="restaurants">Select your restaurant:</label>
+                    <select name="restaurants" id="restaurants">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
 
+                <button class="submit">Submit</button>
+            </div>
         </div>
     </div>
+    <footer>
+        &copy; Restaurant Est.2024
+        <div class="footer-navbar">
+            <ul class="options">
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Join Waitlist</li>
+                <li>Catering</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
