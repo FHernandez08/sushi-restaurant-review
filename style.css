@@ -45,3 +45,33 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgreen;
+    height: 150px;
+}
+
+.header img {
+    height: 100px;
+}
+
+.options {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.options li {
+    color: white;
+}
+
+.contact {
+    width: 100px;
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    background-color: red;
+    color: white;
+}
