@@ -22,31 +22,41 @@
         <button class="contact">Contact</button>
     </div>
     <div class="main">
-        <h1>Questionaire</h1>
-        <div class="survey-form">
-            <div class="contact-section">
-                <h4>- Contact Information -</h4>
-                <label for="name">Name: </label>
-                <input type="text" id="name" placeholder="Enter your fullname">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-                <label for="phone-number">Phone Number: </label>
-                <input type="number" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
-            </div>
-            <div class="rating-experience">
-                <h4>- Overall Experience -</h4>
-                <div class="rating">
-                    <input type="radio" name="rate" id="star5" value="5">
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" name="rate" id="star4" value="4">
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" name="rate" id="star3" value="3">
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" name="rate" id="star2" value="2">
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" name="rate" id="star1" value="1">
-                    <label for="star1" title="text">1 stars</label>
+        <div class="content-square">
+            <h1>- Questionaire -</h1>
+            <div class="survey-form">
+                <div class="contact-section">
+                    <h4>- Contact Information -</h4>
+                    <div class="input-section">
+                        <div class="input-line">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" placeholder="Enter your fullname">
+                        </div>
+                        <div class="input-line">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-line">
+                            <label for="phone-number">Phone Number: </label>
+                            <input type="number" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
+                        </div>
+                    </div>
                 </div>
+                <hr>
+                <div class="rating-experience">
+                    <h4>- Overall Experience -</h4>
+                    <div class="rating">
+                        <input type="radio" name="rate" id="star1" value="1">
+                        <label for="star1" title="text"></label>
+                        <input type="radio" name="rate" id="star2" value="2">
+                        <label for="star2" title="text"></label>
+                        <input type="radio" name="rate" id="star3" value="3">
+                        <label for="star3" title="text"></label>
+                        <input type="radio" name="rate" id="star4" value="4">
+                        <label for="star4" title="text"></label>
+                        <input type="radio" name="rate" id="star5" value="5">
+                        <label for="star5" title="text"></label>
+                    </div>
                 <div class="dish-options">
                     <label for="menu-items">Choose your favorite dish from our menu: </label>
                     <select name="menu-items" id="menu-items">
@@ -75,21 +85,26 @@
                         <textarea name="any-notes" id="any-notes" cols="50" rows="10"></textarea>
                     </div>
                 </div>
-            </div>
-            <div class="submit-section">
-                <div class="dropbox">
-                    <label for="restaurants">Select your restaurant:</label>
-                    <select name="restaurants" id="restaurants">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
                 </div>
-                <label for="date">Date:</label>
-                <input type="date" name="date" id="date">
-
-                <button class="submit">Submit</button>
+                <hr>
+                <div class="submit-section">
+                    <div class="flex-section">
+                        <div class="dropbox">
+                            <label for="restaurants">Select your restaurant:</label>
+                            <select name="restaurants" id="restaurants">
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
+                            <option value="Option-3">Option 3</option>
+                            <option value="Option-4">Option 4</option>
+                            </select>
+                        </div>
+                        <div class="date">
+                            <label for="date">Date:</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                    </div>
+                    <button class="submit">Submit</button>
+                </div>
             </div>
         </div>
     </div>
